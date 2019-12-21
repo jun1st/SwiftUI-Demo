@@ -14,73 +14,46 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection){
-            NavigationView {
-                if (!social) {
-                    HomeView()
-                        .navigationBarItems(leading:
-                            HStack {
-                                Button(action: {
-                                    self.social = false
-                                }) {
-                                    Text("发现")
-                                        .foregroundColor(Color.yellow)
-                                        .fontWeight(.bold)
-                                        .font(.title)
-                                    
-                                }
-                                
-                                Button(action: {
-                                    withAnimation {
-                                        self.social = true
-                                    }
-                                    
-                                }) {
-                                    Text("关注")
-                                        .foregroundColor(Color.gray)
-                                }
-                                
-                                Button(action: {
-                                    
-                                }) {
-                                    Text("附近")
-                                        .foregroundColor(Color.gray)
-                                }
-                            }
-                        )
+            GeometryReader { gr in
+                VStack {
+                    HStack(alignment: .bottom, spacing: 20) {
+                        Button(action: {
+                            self.social = false
+                        }) {
+                            Text("发现")
+                                .foregroundColor(Color.yellow)
+                                .fontWeight(.bold)
+                                .font(.title)
+                        }
+
+                        Button(action: {
+                            self.social = true
+                        }) {
+                            Text("关注")
+                                .foregroundColor(Color.gray)
+                        }
+
+                        Button(action: {
+
+                        }) {
+                            Text("附近")
+                                .foregroundColor(Color.gray)
+                        }
+                        Spacer()
                     }
-                else {
-                    SocialHomeView()
-                        .navigationBarItems(leading:
-                            HStack {
-                                Button(action: {
-                                    self.social = false
-                                }) {
-                                    Text("发现")
-                                       .foregroundColor(Color.gray)
-                                    
-                                }
-                                
-                                Button(action: {
-                                    self.social = true
-                                }) {
-                                    Text("关注")
-                                        .foregroundColor(Color.yellow)
-                                        .fontWeight(.bold)
-                                        .font(.title)
-                                        
-                                }
-                                
-                                Button(action: {
-                                    
-                                }) {
-                                    Text("附近")
-                                        .foregroundColor(Color.gray)
-                                }
-                            }
-                        )
+                    .padding(.top, 10)
+                    .padding(.leading, 20)
+                
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            HomeView()
+                                .frame(width: gr.size.width)
+                            SocialHomeView()
+                                .frame(width: gr.size.width)
+                        }
+                    }
                 }
-                }
-                .tabItem {
+            }.tabItem {
                     VStack {
                         Image("plain")
                         Text("分享")

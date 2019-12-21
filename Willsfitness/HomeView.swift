@@ -13,6 +13,7 @@ struct HomeView: View {
             ScrollView {
                 HStack(alignment: .top) {
                     VStack(alignment: .center) {
+                        Text(" ").frame(width: 20, height: 10)
                         SectionView()
                         SectionNoImage()
                         SectionVideoView()
@@ -21,6 +22,7 @@ struct HomeView: View {
                         .frame(maxWidth: .infinity)
 
                     VStack(alignment: .center) {
+                        Text(" ").frame(width: 20, height: 10)
                         SectionNoImage()
                         SectionVideoView()
                         SectionView()

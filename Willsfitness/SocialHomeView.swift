@@ -10,9 +10,17 @@ import SwiftUI
 
 struct SocialHomeView: View {
     var body: some View {
-        ScrollView {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        }
+        
+            ScrollView {
+                
+                    VStack(alignment: .center) {
+                        SectionView()
+                        SectionNoImage()
+                        SectionVideoView()
+                        SectionView()
+                    }.padding(.leading, 20)
+                    .frame(maxWidth: .infinity)
+                }
         
     }
 }
