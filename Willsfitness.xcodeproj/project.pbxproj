@@ -14,7 +14,6 @@
 		4CF50C3C23AD165500CB89E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF50C3B23AD165500CB89E1 /* ContentView.swift */; };
 		4CF50C3E23AD165700CB89E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF50C3D23AD165700CB89E1 /* Assets.xcassets */; };
 		4CF50C4123AD165700CB89E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF50C4023AD165700CB89E1 /* Preview Assets.xcassets */; };
-		4CF50C4423AD165700CB89E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF50C4223AD165700CB89E1 /* LaunchScreen.storyboard */; };
 		4CF50C4C23AD205D00CB89E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF50C4B23AD205D00CB89E1 /* HomeView.swift */; };
 		4CF50C4E23AD222600CB89E1 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF50C4D23AD222600CB89E1 /* SectionView.swift */; };
 		4CF50C5023ADCF3F00CB89E1 /* SectionNoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF50C4F23ADCF3F00CB89E1 /* SectionNoImage.swift */; };
@@ -30,7 +29,6 @@
 		4CF50C3B23AD165500CB89E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CF50C3D23AD165700CB89E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF50C4023AD165700CB89E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4CF50C4323AD165700CB89E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF50C4523AD165700CB89E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CF50C4B23AD205D00CB89E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4CF50C4D23AD222600CB89E1 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				4CF50C3923AD165500CB89E1 /* SceneDelegate.swift */,
 				4CF50C3B23AD165500CB89E1 /* ContentView.swift */,
 				4CF50C3D23AD165700CB89E1 /* Assets.xcassets */,
-				4CF50C4223AD165700CB89E1 /* LaunchScreen.storyboard */,
 				4CF50C4523AD165700CB89E1 /* Info.plist */,
 				4CF50C3F23AD165700CB89E1 /* Preview Content */,
 				4CF50C4B23AD205D00CB89E1 /* HomeView.swift */,
@@ -151,7 +148,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF50C4423AD165700CB89E1 /* LaunchScreen.storyboard in Resources */,
 				4CF50C4123AD165700CB89E1 /* Preview Assets.xcassets in Resources */,
 				4CF50C3E23AD165700CB89E1 /* Assets.xcassets in Resources */,
 			);
@@ -177,17 +173,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4CF50C4223AD165700CB89E1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CF50C4323AD165700CB89E1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4CF50C4623AD165700CB89E1 /* Debug */ = {
@@ -318,10 +303,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.willsfitness.one-app.Willsfitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willsfitness.one-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -339,10 +324,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.willsfitness.one-app.Willsfitness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willsfitness.one-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
