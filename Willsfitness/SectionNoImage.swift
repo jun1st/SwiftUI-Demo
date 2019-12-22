@@ -30,13 +30,13 @@ struct SectionNoImage: View {
                     
                 }
                 
-                HStack {
-                    Text("#燃烧我的卡路里，有氧运动")
+                
+                Text("#燃烧我的卡路里，有氧运动")
                         .font(.system(size: 13))
                         .foregroundColor(.yellow)
                         .padding(.vertical, 12)
-                    Spacer()
-                }
+                        .layoutPriority(1)
+                
                 
                 
                 Text("今天的活动不错，希望 Wills 越办越好")

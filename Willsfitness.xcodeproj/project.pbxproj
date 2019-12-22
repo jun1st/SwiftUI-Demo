@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C4EAC4923AF8B2200745608 /* SocialSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EAC4823AF8B2200745608 /* SocialSectionView.swift */; };
+		4C4EAC4B23AFBDE300745608 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EAC4A23AFBDE300745608 /* DetailView.swift */; };
 		4CBB8D2D23AE3787005D73E4 /* SectionVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB8D2C23AE3787005D73E4 /* SectionVideoView.swift */; };
 		4CF50C3823AD165500CB89E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF50C3723AD165500CB89E1 /* AppDelegate.swift */; };
 		4CF50C3A23AD165500CB89E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF50C3923AD165500CB89E1 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		4C4EAC4823AF8B2200745608 /* SocialSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSectionView.swift; sourceTree = "<group>"; };
+		4C4EAC4A23AFBDE300745608 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4CBB8D2C23AE3787005D73E4 /* SectionVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionVideoView.swift; sourceTree = "<group>"; };
 		4CF50C3423AD165500CB89E1 /* Willsfitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Willsfitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF50C3723AD165500CB89E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				4CF50C5123AE1B9900CB89E1 /* SocialHomeView.swift */,
 				4CBB8D2C23AE3787005D73E4 /* SectionVideoView.swift */,
 				4C4EAC4823AF8B2200745608 /* SocialSectionView.swift */,
+				4C4EAC4A23AFBDE300745608 /* DetailView.swift */,
 			);
 			path = Willsfitness;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				4CBB8D2D23AE3787005D73E4 /* SectionVideoView.swift in Sources */,
 				4CF50C5023ADCF3F00CB89E1 /* SectionNoImage.swift in Sources */,
 				4CF50C3823AD165500CB89E1 /* AppDelegate.swift in Sources */,
+				4C4EAC4B23AFBDE300745608 /* DetailView.swift in Sources */,
 				4CF50C4C23AD205D00CB89E1 /* HomeView.swift in Sources */,
 				4CF50C4E23AD222600CB89E1 /* SectionView.swift in Sources */,
 				4CF50C3A23AD165500CB89E1 /* SceneDelegate.swift in Sources */,
