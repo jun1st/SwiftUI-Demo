@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C4EAC4923AF8B2200745608 /* SocialSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EAC4823AF8B2200745608 /* SocialSectionView.swift */; };
 		4CBB8D2D23AE3787005D73E4 /* SectionVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB8D2C23AE3787005D73E4 /* SectionVideoView.swift */; };
 		4CF50C3823AD165500CB89E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF50C3723AD165500CB89E1 /* AppDelegate.swift */; };
 		4CF50C3A23AD165500CB89E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF50C3923AD165500CB89E1 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C4EAC4823AF8B2200745608 /* SocialSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSectionView.swift; sourceTree = "<group>"; };
 		4CBB8D2C23AE3787005D73E4 /* SectionVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionVideoView.swift; sourceTree = "<group>"; };
 		4CF50C3423AD165500CB89E1 /* Willsfitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Willsfitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF50C3723AD165500CB89E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				4CF50C4F23ADCF3F00CB89E1 /* SectionNoImage.swift */,
 				4CF50C5123AE1B9900CB89E1 /* SocialHomeView.swift */,
 				4CBB8D2C23AE3787005D73E4 /* SectionVideoView.swift */,
+				4C4EAC4823AF8B2200745608 /* SocialSectionView.swift */,
 			);
 			path = Willsfitness;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				4CF50C4C23AD205D00CB89E1 /* HomeView.swift in Sources */,
 				4CF50C4E23AD222600CB89E1 /* SectionView.swift in Sources */,
 				4CF50C3A23AD165500CB89E1 /* SceneDelegate.swift in Sources */,
+				4C4EAC4923AF8B2200745608 /* SocialSectionView.swift in Sources */,
 				4CF50C5223AE1B9900CB89E1 /* SocialHomeView.swift in Sources */,
 				4CF50C3C23AD165500CB89E1 /* ContentView.swift in Sources */,
 			);
@@ -313,6 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.willsfitness.one-app.Willsfitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -333,6 +338,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.willsfitness.one-app.Willsfitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

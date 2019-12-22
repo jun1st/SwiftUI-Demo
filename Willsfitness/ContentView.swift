@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
-    @State private var social = false
+    @State private var titleSelection = 1
     
     var body: some View {
         TabView(selection: $selection){
@@ -18,19 +18,32 @@ struct ContentView: View {
                 VStack {
                     HStack(alignment: .bottom, spacing: 20) {
                         Button(action: {
-                            self.social = false
+                            self.titleSelection = 1
                         }) {
-                            Text("发现")
-                                .foregroundColor(Color.yellow)
-                                .fontWeight(.bold)
-                                .font(.title)
+                            if(self.titleSelection == 1) {
+                                Text("发现")
+                                    .foregroundColor(Color.yellow)
+                                    .fontWeight(.bold)
+                                    .font(.title)
+                            } else {
+                                Text("发现")
+                                    .foregroundColor(Color.gray)
+                            }
                         }
 
                         Button(action: {
-                            self.social = true
+                            self.titleSelection = 2
                         }) {
-                            Text("关注")
-                                .foregroundColor(Color.gray)
+                            if(self.titleSelection == 2) {
+                                Text("关注")
+                                    .foregroundColor(Color.yellow)
+                                    .fontWeight(.bold)
+                                    .font(.title)
+                            } else {
+                                Text("关注")
+                                    .foregroundColor(Color.gray)
+                            }
+                            
                         }
 
                         Button(action: {
@@ -52,6 +65,9 @@ struct ContentView: View {
                                 .frame(width: gr.size.width)
                         }
                     }
+                    .content.offset(x: self.titleSelection == 2 ? -gr.size.width : 0, y: 0)
+                    .animation(.easeInOut)
+                    .frame(width: gr.size.width, height: nil, alignment: .leading)
                 }
             }.tabItem {
                     VStack {
